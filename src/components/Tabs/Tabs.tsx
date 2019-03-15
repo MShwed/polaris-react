@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {HorizontalDotsMinor} from '@shopify/polaris-icons';
 import {autobind} from '@shopify/javascript-utilities/decorators';
 import {classNames} from '@shopify/react-utilities/styles';
 import {noop} from '@shopify/javascript-utilities/other';
@@ -105,7 +106,7 @@ export default class Tabs extends React.PureComponent<Props, State> {
         className={styles.DisclosureActivator}
         onClick={this.handleDisclosureActivatorClick}
       >
-        <Icon source="horizontalDots" />
+        <Icon source={HorizontalDotsMinor} />
       </button>
     );
 
